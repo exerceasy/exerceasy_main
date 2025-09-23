@@ -287,3 +287,154 @@ footer {
     background-color: #066100;
 }
 
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #225522;
+}
+
+.section-title-green {
+    background: #ddf6e3;
+    padding: 18px 0;
+    border-bottom: 3px solid #088500;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 2px 10px rgba(8,133,0,0.07);
+}
+
+.section-title-green h2 {
+    color: #088500;
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+
+.section-content {
+    background: #fff;
+    padding: 42px 0 42px 0;
+    min-height: 400px;
+}
+
+.section-content p {
+    font-size: 1.18rem;
+    line-height: 1.7;
+    color: #225522;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.section-content .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Riquadro verde pallido per la sezione alternativa */
+.green-box-section {
+    background-color: #ddf6e3;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .green-box-section h3 {
+    color: #088500;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .green-box-section ul {
+    color: #225522;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+  }
+  
+  .green-box-section ul li {
+    margin-bottom: 12px;
+  }
+  
+  /* Pulsante verde arrotondato */
+  .green-btn {
+    display: inline-block;
+    background-color: #088500;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
+  }
+  
+  .green-btn:hover,
+  .green-btn:focus {
+    background-color: #066100;
+  }
+
+  .section-content p {
+    font-size: 1.18rem;
+    line-height: 1.7;
+    color: #225522;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.section-content h3 {
+    margin-top: 36px;
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #088500;
+}
+
+.section-content strong {
+    font-weight: 700;
+}
+
+.section-content em {
+    font-style: italic;
+    color: #146214;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    color: #225522;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #fff;
+}
+
+.styled-table thead tr {
+    background-color: #088500;
+    color: #fff;
+    text-align: center;
+}
+
+.styled-table th, .styled-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    width: 20%;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #d2f0c7;
+}
+
+.exercise-btn-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  

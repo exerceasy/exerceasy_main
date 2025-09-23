@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introduzione alla Statistica Descrittiva - exerceasy</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- MathJax per LaTeX -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="container logo-header">
+        <div class="logotitle">
+            <img src="logo.png" alt="Logo exerceasy" class="logo" />
+            <h1><a href="index.html">exerceasy</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="statistica.html" class="active">Statistica</a></li>
+                <li><a href="matematica-finanziaria.html">Matematica Finanziaria</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="section-title-green">
+    <div class="container">
+        <h2>Introduzione alla Statistica Descrittiva</h2>
+    </div>
+</section>
+
+<section class="section-content">
+    <div class="container">
+
+        <p><strong>I dati</strong> sono spesso considerati la risorsa più preziosa del XXI secolo. Il loro valore deriva dalla disciplina della <strong>statistica</strong>, la scienza che si occupa della loro rappresentazione, interpretazione ed analisi.</p>
+
+        <p>In questa sezione verranno approfonditi i concetti fondamentali relativi ai dati, illustrandone le caratteristiche principali e proprietà.</p>
+
+        <h3>Dati</h3>
+        <p>I dati statistici sono informazioni ricavate dall’osservazione o misurazione di una caratteristica di un elemento di una popolazione.</p>
+
+        <p>I dati raccolti sono poi organizzati in <strong>tabelle di dati</strong>, anche chiamate “dataset”. Esistono vari tipi di tabelle di dati, ma iniziamo con un esempio.</p>
+
+        <p>Una compagnia aerea ha finanziato un sondaggio a campione ad alcuni suoi passeggeri al termine del loro volo. Ai sette intervistati è stato chiesto, oltre al cognome, che tipo di biglietto hanno usato, come si sono trovati durante il viaggio, quanti bagagli hanno con se e quanto hanno pagato il biglietto. I dati raccolti sono poi stati organizzati nella seguente tabella (dataset):</p>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Unità Statistiche</th>
+                    <th>Tipologia di Biglietto</th>
+                    <th>Soddisfazione del Viaggio</th>
+                    <th>Numero di Bagagli</th>
+                    <th>Costo del biglietto (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Rossi</td><td>Cartaceo</td><td>Soddisfatto</td><td>2</td><td>120,50</td></tr>
+                <tr><td>Russo</td><td>QR Code</td><td>Insoddisfatto</td><td>1</td><td>95,00</td></tr>
+                <tr><td>Ferrari</td><td>Cartaceo</td><td>Molto soddisfatto</td><td>3</td><td>150,75</td></tr>
+                <tr><td>Bianchi</td><td>Cartaceo</td><td>Soddisfatto</td><td>1</td><td>110,00</td></tr>
+                <tr><td>Romano</td><td>Wallet</td><td>Molto soddisfatto</td><td>4</td><td>200,00</td></tr>
+                <tr><td>Colombo</td><td>QR Code</td><td>Insoddisfatto</td><td>2</td><td>130,20</td></tr>
+                <tr><td>Bruno</td><td>Cartaceo</td><td>Soddisfatto</td><td>1</td><td>85,00</td></tr>
+            </tbody>
+        </table>
+
+        <p>Cerchiamo ora di chiamare le varie sezioni della nostra tabella.</p>
+
+        <p><strong>Osservazioni</strong> (anche dette <em>Unità Statistiche</em>): sono i “soggetti” a cui abbiamo posto le nostre domande. Non necessariamente si tratta di persone, ma di qualunque cosa da cui può essere estrapolata un’informazione. Nel nostro caso sono i sette intervistati (di cui conosciamo il cognome).</p>
+
+        <p><strong>Caratteri</strong> (anche dette <em>Variabili</em>): sono le “domande” poste ai soggetti. Nel nostro caso ne sono state poste quattro (Tipologia di Biglietto, Soddisfazione del Viaggio, Numero di Bagagli e Costo del Biglietto).</p>
+
+        <p><strong>Modalità</strong>: sono le “risposte” alle domande poste. Nel nostro caso ogni osservazione ha dato quattro risposte (ad esempio il signor Rossi ha risposto: Cartaceo, Soddisfatto, 2 e 120,50€).</p>
+
+        <p>Il dataset che vediamo ci mostra una <strong>Distribuzione Unitaria</strong>, ovvero una rappresentazione dei dati in cui conosciamo le informazioni inerenti a ciascuna osservazione (per intenderci, sappiamo precisamente che il signor Ferrari ha acquistato un biglietto cartaceo). Questa caratteristica non sarà presente nelle distribuzioni di frequenze (che vedremo in seguito).</p>
+
+        <h3>Caratteri</h3>
+
+        <p>I caratteri, cioè le domande che poniamo alle osservazioni, possono essere ulteriormente suddivisi:</p>
+
+        <p><strong>Caratteri Qualitativi</strong>: tipologia di caratteri che ha solo modalità non-numeriche (ad esempio la Tipologia di Biglietto e la Soddisfazione del Viaggio). I caratteri qualitativi possono essere a loro volta suddivisi:</p>
+
+        <ul>
+            <li><strong>Nominali (anche detti Sconnessi)</strong>: caratteri con modalità che non possono essere ordinate secondo un criterio logico comune (ad esempio la Tipologia di Biglietto: il biglietto cartaceo non è “minore” del Qr Code)</li>
+            <li><strong>Ordinali</strong>: caratteri le cui modalità possono essere ordinate secondo un criterio logico comune (ad esempio la Soddisfazione del Viaggio: Insoddisfatto è “minore” di Soddisfatto che è “minore” di Molto Soddisfatto).</li>
+        </ul>
+
+        <p><strong>Caratteri Quantitativi</strong>: tipologia di caratteri che ha modalità numeriche (ad esempio il Numero di Bagagli e il Costo del Biglietto). Anche i caratteri quantitativi possono essere suddivisi:</p>
+
+        <ul>
+            <li><strong>Discreti</strong>: caratteri le cui modalità numeriche sono numerabili (vale a dire che fra due modalità, prima o poi, non è possibile trovarne un’altra in mezzo). Un esempio di carattere quantitativo discreto è il Numero di Bagagli: c’è chi ha imbarcato un bagaglio, chi due, ma nessuno può imbarcare un bagaglio e mezzo.</li>
+            <li><strong>Continui</strong>: caratteri le cui modalità numeriche possono assumere qualunque valore, compresi valori decimali (ad esempio il Costo del Biglietto).</li>
+        </ul>
+
+        <p><em>Suggerimento</em>: In molti corsi di statistica è sufficiente considerare come caratteri quantitativi discreti quei caratteri numerici con modalità che corrispondono a numeri interi.</p>
+
+    </div>
+</section>
+
+<section class="green-box-section">
+    <div class="container">
+      <h3>Terminologie Alternative</h3>
+      <p>In diversi corsi di statistica è presente una divisione alternativa dei caratteri:</p>
+      <ul>
+        <li><strong>Scala Nominale</strong>: si tratta dei già introdotti caratteri qualitativi nominali</li>
+        <li><strong>Scala Ordinale</strong>: si tratta dei già introdotti caratteri qualitativi ordinali</li>
+        <li><strong>Scala a Intervalli</strong>: si tratta di caratteri quantitativi in cui intervalli uguali sulla scala corrispondono a differenze uguali nella proprietà misurata (ad esempio tra 1 e 3 bagagli ci sono 2 bagagli di differenza, così come tra 5 e 7 bagagli ci sono 2 bagagli)</li>
+        <li><strong>Scala a Rapporti</strong>: si tratta di caratteri quantitativi che, oltre a possedere le stesse proprietà della Scala a Intervalli, possiedono uno zero assoluto (se la modalità assume il valore 0, significa necessariamente l’assenza di quel carattere. Nel caso del Costo del Biglietto uno 0 sta a significare che non è stato pagato).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="exercise-btn-section">
+    <div class="container" style="text-align: center;">
+      <a href="esercizi.html" class="btn green-btn">Vai ad esempi ed esercizi</a>
+    </div>
+  </section>
+  
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 exerceasy. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+</body>
+</html>
