@@ -6,11 +6,14 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.16rem;              /* più grande, meglio leggibile */
+    line-height: 1.7;
     background: #f9f9f9;
-    color: #333;
-}
+    color: #222;
+  }
+  
+  
 
 .container {
     width: 90%;
@@ -436,5 +439,97 @@ footer {
     margin-bottom: 40px;
     text-align: center;
   }
+
+.frequency-btn {
+background-color: #006600;
+color: white;
+padding: 14px 28px;
+border-radius: 25px;
+font-weight: 700;
+font-size: 1.1rem;
+text-decoration: none;
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+margin-left: 20px;
+transition: background-color 0.3s ease;
+}
+
+.frequency-btn:hover,
+.frequency-btn:focus {
+background-color: #004400;
+}
+
+.exercise-btn-section .container {
+    display: flex;
+    justify-content: center;
+    gap: 32px; /* distanza tra pulsanti */
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background: #249420;
+    color: white;
+    padding: 18px 0;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 1.35rem;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    width: 340px;      /* larghezza fissa identica per tutti */
+    min-width: 220px;
+    max-width: 100%;
+    text-align: center;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background: #176313;
+  }
+  
+  .contact-btn {
+    background-color: #ddf6e3; /* verde pallido */
+    color: #088500; /* verde scuro */
+    padding: 14px 28px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: 2.5px solid #088500; /* bordo verde scuro */
+    box-shadow: 0 4px 8px rgba(8,133,0,0.12);
+    margin-left: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .contact-btn:hover,
+  .contact-btn:focus {
+    background-color: #c7e8c1; /* verde pallido scuro al passaggio */
+    color: #045300;
+    border-color: #045300;
+  }
+  
+  .section-title-green {
+    width: 100%;
+    background: #ddf6e3;
+    padding: 24px 0 20px 0;
+    border-bottom: 3px solid #088500;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 2px 10px rgba(8,133,0,0.07);
+    margin-bottom: 30px;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+  
+  .section-title-green h2 {
+    color: #088500;
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin: 0;
+    padding-left: 64px; /* o padding: 0 64px altrettanto valido */
+    text-align: left;
+  }
+  
+  
 
   
