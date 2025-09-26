@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Distribuzioni di Frequenze - exerceasy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="container logo-header">
+    <div class="logotitle">
+      <img src="logo.png" alt="Logo exerceasy" class="logo" />
+      <h1><a href="index.html">exerceasy</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="statistica.html">Statistica</a></li>
+        <li><a href="matematica-finanziaria.html">Matematica Finanziaria</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="section-title-green">
+  <div class="container">
+    <h2>Distribuzioni di Frequenze</h2>
+  </div>
+</section>
+
+<section class="section-content">
+  <div class="container">
+
+    <p>Finora abbiamo trattato le tipologie di caratteri e le tabelle in cui vengono raccolti (dataset). Con la statistica è tuttavia possibile una rappresentazione tabellare dei dati più compatta, utile ad esempio per riassumere più efficacemente le informazioni raccolte.</p>
+    <p>A tale scopo introduciamo le <b>Distribuzioni di Frequenza</b>, delle rappresentazioni in tabella non più di diverse osservazioni ma di un singolo carattere.</p>
+
+    <h3>Esempio di dataset</h3>
+    <table class="styled-table">
+        <thead>
+        <tr>
+          <th>Unità Statistiche</th>
+          <th>Tipologia di Biglietto</th>
+          <th>Soddisfazione del Viaggio</th>
+          <th>Numero di Bagagli</th>
+          <th>Costo del biglietto (€)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Rossi</td><td>Cartaceo</td><td>Soddisfatto</td><td>2</td><td>120,50</td></tr>
+        <tr><td>Russo</td><td>QR Code</td><td>Insoddisfatto</td><td>1</td><td>95,00</td></tr>
+        <tr><td>Ferrari</td><td>Cartaceo</td><td>Molto soddisfatto</td><td>3</td><td>150,75</td></tr>
+        <tr><td>Bianchi</td><td>Cartaceo</td><td>Soddisfatto</td><td>1</td><td>110,00</td></tr>
+        <tr><td>Romano</td><td>Wallet</td><td>Molto soddisfatto</td><td>4</td><td>200,00</td></tr>
+        <tr><td>Colombo</td><td>QR Code</td><td>Insoddisfatto</td><td>2</td><td>130,20</td></tr>
+        <tr><td>Bruno</td><td>Cartaceo</td><td>Soddisfatto</td><td>1</td><td>85,00</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Distribuzione di frequenza</h3>
+    <p>Scegliamo il carattere <b>Soddisfazione del Viaggio</b>.</p>
+
+    <table class="styled-table">
+        <thead>
+        <tr>
+          <th>Soddisfazione del Viaggio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Insoddisfatto</td></tr>
+        <tr><td>Soddisfatto</td></tr>
+        <tr><td>Molto Soddisfatto</td></tr>
+      </tbody>
+    </table>
+
+    <p>Contiamo quante volte compaiono nei nostri dati. Otteniamo la seguente tabella delle <b>frequenze assolute</b> (\( n_i \)):</p>
+
+    <table class="styled-table">
+        <thead>
+        <tr>
+          <th>Soddisfazione del Viaggio</th>
+          <th>Frequenza assoluta (\( n_i \))</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Insoddisfatto</td><td>2</td></tr>
+        <tr><td>Soddisfatto</td><td>3</td></tr>
+        <tr><td>Molto Soddisfatto</td><td>2</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Frequenze Relative</h3>
+    <p>Le <b>frequenze relative</b> (\( f_i \)) sono date da:</p>
+    <div style="text-align: center;">
+      \[
+      f_i = \frac{n_i}{n}
+      \]
+    </div>
+    <p>Dove:</p>
+    <ul>
+      <li>\( n_i \): frequenza assoluta associata alla generica modalità "i"</li>
+      <li>\( n \): totale delle osservazioni (qui 7)</li>
+    </ul>
+    <p>Nel nostro esempio:</p>
+    <ul>
+      <li>Insoddisfatto: \( \frac{2}{7} = 0,2857 \)</li>
+      <li>Soddisfatto: \( \frac{3}{7} = 0,4286 \)</li>
+      <li>Molto Soddisfatto: \( \frac{2}{7} = 0,2857 \)</li>
+    </ul>
+    <table class="styled-table">
+        <thead>
+        <tr>
+          <th>Soddisfazione del Viaggio</th>
+          <th>Frequenza assoluta (\( n_i \))</th>
+          <th>Frequenza relativa (\( f_i \))</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Insoddisfatto</td><td>2</td><td>0,2857</td></tr>
+        <tr><td>Soddisfatto</td><td>3</td><td>0,4286</td></tr>
+        <tr><td>Molto Soddisfatto</td><td>2</td><td>0,2857</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Frequenze Percentuali</h3>
+    <p><b>Frequenza percentuale</b> (\( p_i \)):</p>
+    <div style="text-align:center;">
+      \[
+      p_i = f_i \cdot 100
+      \]
+    </div>
+    <ul>
+      <li>Insoddisfatto: \( 0,2857 \cdot 100 = 28,57\% \)</li>
+      <li>Soddisfatto: \( 0,4286 \cdot 100 = 42,86\% \)</li>
+      <li>Molto Soddisfatto: \( 0,2857 \cdot 100 = 28,57\% \)</li>
+    </ul>
+
+    <table class="styled-table">
+        <thead>
+        <tr>
+          <th>Soddisfazione del Viaggio</th>
+          <th>Frequenza assoluta (\( n_i \))</th>
+          <th>Frequenza relativa (\( f_i \))</th>
+          <th>Frequenza percentuale (\( p_i \))</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Insoddisfatto</td><td>2</td><td>0,2857</td><td>28,57%</td></tr>
+        <tr><td>Soddisfatto</td><td>3</td><td>0,4286</td><td>42,86%</td></tr>
+        <tr><td>Molto Soddisfatto</td><td>2</td><td>0,2857</td><td>28,57%</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Frequenze Cumulate</h3>
+    <p><b>Frequenza assoluta cumulata</b> (\( N_k \)):</p>
+    <div style="text-align:center;">
+      \[
+      N_k = \sum_{i=1}^k n_i
+      \]
+    </div>
+    <p>Per l’esempio:</p>
+    <ul>
+      <li>Insoddisfatto: 2</li>
+      <li>Soddisfatto: \( 2+3=5 \)</li>
+      <li>Molto Soddisfatto: \( 2+3+2=7 \)</li>
+    </ul>
+    <table class="styled-table">
+        <thead>
+        <tr>
+          <th>Soddisfazione del Viaggio</th>
+          <th>\( n_i \)</th>
+          <th>\( f_i \)</th>
+          <th>\( p_i \)</th>
+          <th>\( N_k \)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Insoddisfatto</td><td>2</td><td>0,2857</td><td>28,57%</td><td>2</td></tr>
+        <tr><td>Soddisfatto</td><td>3</td><td>0,4286</td><td>42,86%</td><td>5</td></tr>
+        <tr><td>Molto Soddisfatto</td><td>2</td><td>0,2857</td><td>28,57%</td><td>7</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Frequenze Relative e Percentuali Cumulate</h3>
+    <p><b>Frequenza relativa cumulata</b> (\( F_k \)):</p>
+    <div style="text-align:center;">
+      \[
+      F_k = \sum_{i=1}^k f_i
+      \]
+    </div>
+    <ul>
+      <li>Insoddisfatto: 0,2857</li>
+      <li>Soddisfatto: \( 0,2857 + 0,4286 = 0,7143 \)</li>
+      <li>Molto Soddisfatto: \( 0,2857 + 0,4286 + 0,2857 = 1 \)</li>
+    </ul>
+    <p><b>Frequenza percentuale cumulata</b> (\( P_k \)):</p>
+    <div style="text-align:center;">
+      \[
+      P_k = \sum_{i=1}^k p_i
+      \]
+    </div>
+    <ul>
+      <li>Insoddisfatto: 28,57%</li>
+      <li>Soddisfatto: 71,43%</li>
+      <li>Molto Soddisfatto: 100,00%</li>
+    </ul>
+    <table class="styled-table">
+        <thead>
+        <tr>
+          <th>Soddisfazione</th>
+          <th>\( n_i \)</th>
+          <th>\( f_i \)</th>
+          <th>\( p_i \)</th>
+          <th>\( N_k \)</th>
+          <th>\( F_k \)</th>
+          <th>\( P_k \)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Insoddisfatto</td><td>2</td><td>0,2857</td><td>28,57%</td><td>2</td><td>0,2857</td><td>28,57%</td>
+        </tr>
+        <tr>
+          <td>Soddisfatto</td><td>3</td><td>0,4286</td><td>42,86%</td><td>5</td><td>0,7143</td><td>71,43%</td>
+        </tr>
+        <tr>
+          <td>Molto Soddisfatto</td><td>2</td><td>0,2857</td><td>28,57%</td><td>7</td><td>1,0000</td><td>100,00%</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</section>
+
+<!-- Gruppo 3 pulsanti verdi in una riga -->
+<div class="exercise-btn-section container" style="display:flex;justify-content:center;gap:32px;margin-bottom:22px;">
+    <a href="statistica.html#unita" class="btn same-size-btn">Unità, Caratteri e Modalità</a>
+    <a href="esercizi_introduzione_statistica.html" class="btn same-size-btn">Vai ad Esempi ed Esercizi</a>
+    <a href="statistica.html#indici" class="btn same-size-btn">Indici Medi</a>
+  </div>
+  <!-- Pulsante contattaci sotto, centrato -->
+  <section class="exercise-contact-section">
+    <div class="container" style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
+      <p style="font-size: 1.3rem; font-weight: 600; margin-bottom: 20px;">
+        Hai altri dubbi? Contattaci!
+      </p>
+      <a href="mailto:exerceasy@gmail.com" class="btn contact-btn">Contattaci</a>
+    </div>
+  </section>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 exerceasy. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+</body>
+</html>

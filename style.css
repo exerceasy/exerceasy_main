@@ -430,9 +430,7 @@ footer {
     width: 20%;
 }
 
-.styled-table tbody tr:hover {
-    background-color: #d2f0c7;
-}
+
 
 .exercise-btn-section {
     margin-top: 40px;
@@ -530,6 +528,36 @@ background-color: #004400;
     text-align: left;
   }
   
+  .nav-btn {
+    background-color: #147314;
+    color: white;
+    padding: 14px 36px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin: 0 12px;
+    box-shadow: 0 4px 8px rgba(20,115,20,0.4);
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
   
+  .nav-btn:hover,
+  .nav-btn:focus {
+    background-color: #095209;
+  }
+  
+  .exercise-nav-section .container {
+    margin-top: 40px; /* o 50px o più, regola come preferisci */
+  }
 
+  .same-size-btn {
+    flex: 1 1 0;
+    min-width: 270px;
+    max-width: 400px;
+    text-align: center;
+  }
+  .exercise-btn-section {
+    flex-wrap: nowrap !important;
+  }
   
